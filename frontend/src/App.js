@@ -1,18 +1,33 @@
-import { useEffect } from "react";
-
+// import { useEffect } from "react";
+import {Routes, Route} from "react-router-dom";
 function App() {
-  const get = async () => {
-    const res = await fetch("http://localhost:8000");
-    console.log(res);
-  };
+  return <div>
+<Routes>
+<Route path="/login" elements="" />
 
-  useEffect(() => {
-    get();
-  }, []);
+</Routes>
 
-  return (
-    <div>welcome to frontend</div>
-  )
+
+  </div>
+
 }
 
+
 export default App;
+
+
+
+// function App() {
+//   const get = async () => {
+//     const res = await fetch("http://localhost:8000");
+//     console.log(res);
+//   };
+
+//   useEffect(() => {
+//     get();
+//   }, []);
+
+//   return (
+//     <div>welcome to frontend</div>
+//   )
+// }
