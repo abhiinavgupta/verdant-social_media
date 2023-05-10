@@ -52,3 +52,57 @@ justify-content: center;
 gap: 6px;
 cursor: pointer;
 }
+
+.blur{
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(255, 255, 255, 0.768);
+   z-index: 99;
+}
+
+
+/* ---------------hovers---------------- */
+
+.hover1:hover {
+  background: #faf5e4;
+}
+
+.hover2:hover {
+  background: var(--bg-third) ;
+}
+.hover3:hover{
+  background-color: #fff;
+}
+/* ---------------hovers---------------- */
+
+/* .card {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+} */
+
+
+/* ------------scrollbar------------- */
+.scrollbar::-webkit-scrollbar{
+  width: 4px;
+}
+.scrollbar::-webkit-scrollbar-thumb{
+  background: #faf5e4;
+  border-radius: 50%;
+}
+.small_circle{
+  position: relative;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 11px;
+  background: #faf5e4;
+  cursor: pointer;
+}
+
