@@ -1,6 +1,6 @@
 function Logo() {
     return (
-        <svg width="40" height="40" fill="url(#jsc_s_b)" viewBox="0 0 36 36">
+        <svg width="40" height="40" fill="#004445" viewBox="0 0 36 36" color=""> 
             <defs>
                 <linearGradient
                     id="jsc_s_b"
@@ -23,3 +23,5 @@ function Logo() {
 }
 
 export default Logo;
+
+// fill="url(#jsc_s_b)"

@@ -1,0 +1,185 @@
+.left_home {
+    position: fixed;
+    margin-top: 72px;
+    left: 6px;
+    max-height: 100vh;
+    width: 20vw;
+    overflow-y: auto;
+    background-color: #ffda74 ;
+    padding: 15px 0;
+    padding-bottom: 5rem;
+    user-select: none;
+    border-radius: 20px;
+    
+    
+}
+/* .scrollbar{
+    width: 5px;
+    border-radius: 50%;
+    color: #2c786c;
+} */
+.left_link {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.left_linkk {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+
+.left_link img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 11px;
+    vertical-align: -0.25rem;
+}
+.left_linkk img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 11px;
+    vertical-align: -0.25rem;
+}
+.left-link span {
+    margin-bottom: 4px;
+    margin-left: 1px;
+}
+/* .small_circle{
+    background-color: #7fa99b;
+} */
+.col {
+    margin-left: 2px;
+    transform: translateY(-2px);
+}
+
+.col_1 {
+    transform: translateX(-1px);
+}
+
+.col_2 {
+    position: relative;
+    font-size: 12px;
+    color: #7dd87d;
+    margin-left: 9px;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+.col::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #7dd87d;
+    position: absolute;
+    left: -5px;
+    top: 22px;
+}
+
+.rotate360 {
+    transform: rotate(180deg);
+}
+
+.splitter {
+    height: 3px;
+    background: #2c786c;
+    margin: 9px 6px 0 12px;
+    border-radius: 50%;
+}
+
+.shortcut {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #227c6e;
+    padding: 13px 10px 11px 10px;
+    cursor: default;
+}
+
+.edit_shortcut {
+    font-size: 14px;
+    color: #7dd87d;
+    display: none;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.shortcut:hover .edit_shortcut {
+    display: block;
+}
+.shortcut_list{
+    border-radius: 10px;
+}
+.shortcut_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.shortcut_item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.shortcut_item span {
+    margin-bottom: 3px;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+.cs_copyright {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* gap: 5px; */
+    position: fixed;
+    bottom: 14px;
+    left: 10px;
+    font-size: 12px;
+    color: var(--color-secondary);
+    /* width: 15vw; */
+}
+
+.relative_cs_copyright {
+    position: relative;
+    width: 90%;
+    margin-top: 2rem;
+    /* margin-bottom: -9px;
+    margin-left: -6px;
+    font-size: 12px;
+    color: var(--color-secondary); */
+}
+
+.left_home .small_circle {
+    background: rgb(214, 214, 214);
+}
+
+

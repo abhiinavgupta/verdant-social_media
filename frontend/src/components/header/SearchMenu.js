@@ -15,8 +15,8 @@ export default function SearchMenu({color, setShowSearchMenu}) {
     <div className="header_left search_area scrollbar" ref={menu} >
             <div className="search_wrap">
                 <div className="header_logo">
-                    <div className="circle hover1" onClick={()=>{setShowSearchMenu(false)}} >
-                        <Return color="#f8b400" />
+                    <div className="circle hover5" onClick={()=>{setShowSearchMenu(false)}} >
+                        <Return color="#fff" />
                     </div>
                     </div>
                     <div className="search" onClick={() => {

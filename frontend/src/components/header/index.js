@@ -34,7 +34,8 @@ export default function Header() {
     {/* <div style={{display: "none"}}> */}
         <Link to="/" className="header_logo">
             <div className="circle">
-                <Logo />
+                {/* <Logo /> */}
+                <img src="/verdant-logo-modified.png" alt="Logo" className="headerr_logo"></img>
             </div>
         </Link>
         <div className="search search1" 
@@ -52,7 +53,9 @@ export default function Header() {
                 </div>
     </div>
     {/* </div> */}
-    { showSearchMenu && <SearchMenu color={color} setShowSearchMenu={setShowSearchMenu} /> }
+    { showSearchMenu && <SearchMenu 
+    color={color}
+     setShowSearchMenu={setShowSearchMenu} /> }
     
     <div className="header_middle">
         <Link to="/" className="middle_icon hover1 active">
@@ -84,7 +87,11 @@ export default function Header() {
         <div onClick={()=>{
             setShowAllMenu((prev) => !prev);
         }} >
-            <Menu />
+        <div style={{transform:"translateY(2px)"}}>
+        <Menu />
+        </div>
+        
+            
         </div>
             
             {showAllMenu && <AllMenu />}
@@ -98,7 +105,12 @@ export default function Header() {
             <div className="right_notification">5</div>
         </div>
         <div className={`circle_icon hover1 ${showUserMenu && "active_header"}`} ref={usermenu} >
-        <div onClick={()=> {setShowUserMenu((prev) => !prev)}} > <ArrowDown1  /> </div>
+        <div onClick={()=> {setShowUserMenu((prev) => !prev)}} > 
+        <div style={{transform:"translateY(2px)"}}>
+        <ArrowDown1  /> 
+        </div>
+        
+        </div>
             
             { showUserMenu && <UuserMenu user={user} />}
             

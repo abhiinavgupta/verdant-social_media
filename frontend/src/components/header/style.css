@@ -9,8 +9,9 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: var(--color-primary);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 /* ---------------------- HEADER LEFT ---------------------- */
@@ -22,21 +23,34 @@ header {
     /* padding: 5px; */
 }
 
+
+
+.small_circle{
+    background-color: #f8b400;
+}
+.header_logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .circle {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f8b400;
 }
-
-.small_circle{
-    background-color: #f8b400;
+.headerr_logo{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
 }
-
 .search {
     display: flex;
     align-items: center;

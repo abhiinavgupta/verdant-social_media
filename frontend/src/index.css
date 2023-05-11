@@ -76,6 +76,13 @@ cursor: pointer;
 .hover3:hover{
   background-color: #fff;
 }
+.hover4:hover{
+  background-color: #7fa99b;
+}
+.hover5:hover{
+  color: #f8b400 !important;
+  background: #faf5e4;
+}
 /* ---------------hovers---------------- */
 
 /* .card {
@@ -92,6 +99,81 @@ cursor: pointer;
 .scrollbar::-webkit-scrollbar-thumb{
   background: #faf5e4;
   border-radius: 50%;
+}
+.scrollbar1::-webkit-scrollbar{
+  width: 4px;
+  
+  
+}
+.scrollbar1::-webkit-scrollbar-thumb{
+  background: #004445;
+  border-radius: 50%;
+}
+.right_home {
+  position: fixed;
+  left: 80.7vw;
+  top: 5rem;
+  width: 17vw;
+}
+
+.splitter1 {
+  height: 1.3px;
+  background: var(--divider);
+  width: 17vw;
+  margin: 6px 2px 0 12px;
+}
+
+.contacts_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 7px 10px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.contacts_header_right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact_circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contacts_list {
+  padding: 5px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.contact img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.contact span {
+  transform: translateY(-2px);
 }
 .small_circle{
   position: relative;
