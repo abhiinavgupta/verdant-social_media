@@ -1,0 +1,79 @@
+.createPost {
+    background: #ffda74;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px var(--shadow-1);
+    margin-top: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.createPost_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 17px 5px 15px;
+    
+}
+
+.createPost_header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #004445;
+}
+
+.open_post {
+    background: #f8b400;
+    color: #2c786c;
+    height: 41px;
+    flex: 1;
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: text;
+}
+
+.create_splitter {
+    height: 3px;
+    width: 95%;
+    background: #004445;
+    margin: 7px 10px;
+    border-radius: 50%;
+    color: #004445;
+}
+
+.createPost_body {
+    padding: 0 10px 8px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.createPost_icon {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px;
+    color: #004445;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.room_submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postBox textarea {
+    width: 99% !important;
+    color: var(--color-primary) !important;
+}

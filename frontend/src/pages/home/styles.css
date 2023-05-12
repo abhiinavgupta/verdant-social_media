@@ -8,8 +8,7 @@
 }
 
 .home_middle {
-    margin-top: 66px;
-    
+    margin-top: 66px; 
     position: absolute; 
     left: 50%;
     transform: translateX(-50%);
@@ -44,7 +43,7 @@
     .shortcut,
     .shortcut_item span,
     .splitter,
-    .fb_copyright {
+    .cs_copyright {
         display: none;
     }
 
@@ -53,7 +52,7 @@
     }
 
     .left_link {
-        background: var(--bg-third);
+        background: #004445;
         width: 55px;
         height: 55px;
         border-radius: 50%;
@@ -61,10 +60,10 @@
         place-items: center;
     }
 
-    /* .home_middle {
+    .home_middle {
         position: relative;
         margin-left: 55px;
-    } */
+    }
 
     .home_middle {
         position: absolute;
@@ -74,7 +73,7 @@
     .right_home {
         width: 20vw;
     }
-
+ 
     .contacts_header_right {
         right: 10%;
     }
@@ -106,9 +105,9 @@
         width: 95%;
     }
 
-    /* .home_middle {
+    .home_middle {
         margin-left: 10%;
-    } */
+    }
 
     .right_home {
         left: 78%;
@@ -143,13 +142,13 @@
         width: 112%;
     }
 
-    /* .posts .post {
+    .posts .post {
         width: 100%;
-    } */
+    }
 
-    /* .home_middle {
+    .home_middle {
         margin-left: 9%;
-    } */
+    }
 }
 
 @media (max-width: 805px) {
