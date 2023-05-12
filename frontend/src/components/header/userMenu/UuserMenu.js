@@ -1,11 +1,23 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SettingsPrivacy from "./SettingsPrivacy";
 import HelpSupport from "./HelpSupport";
 import Display from "./Display";
+import { useDispatch } from "react-redux";
+import Cookies from "js-cookie";
 
 
 export default function UuserMenu({user}) {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const logOut = () => {
+        Cookies.set("user", "");
+        dispatch({
+            type: "LOGOUT",
+        });
+        navigate("/login");
+    };
+
     const [visible, setVisible] = useState(0);
         return (
     <div className="mmenu">
@@ -56,7 +68,7 @@ export default function UuserMenu({user}) {
             <i className="right_icon"></i>
         </div>
         </div>
-        <div className="mmenu_item hover1">
+        <div className="mmenu_item hover1" onClick={() => { logOut(); }}>
         <div className="small_circle">
             <i className="logout_filled_icon"></i>
         </div>

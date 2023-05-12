@@ -6,6 +6,7 @@ import Main from "./pages/main";
 import LoggedInRoute from "./routes/LoggedInRoute";
 import Home from "./pages/home";
 import NotLoggenInRoutes from "./routes/NotLoggedInRoute";
+import Activate from "./pages/home/activate";
 
 
 
@@ -16,6 +17,7 @@ function App() {
 <Route element={<LoggedInRoute />}>
 <Route path="/profile" element={ <Profile />} exact />
 <Route path="/" element={ <Home />} exact />
+<Route path="/activate/:token" element={<Activate />} exact />
 </Route>
 <Route element={<NotLoggenInRoutes />}>
 <Route path="/login" element={ <Login />} exact />
