@@ -8,6 +8,10 @@ export default function LoginInput({ placeholder,bottom, ...props }) {
       query:"(min-width: 850px)",
 });
 
+// const desktopView1050 = useMediaQuery({
+//   query:"(min-width: 1050px)",
+// });
+
   return (
     
     <div className="input_wrap">

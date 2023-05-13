@@ -8,8 +8,8 @@
 
 .input_wrap input {
     outline: none;
-    border: 1px solid var(--bg-third);
-    background: var(--bg-primary);
+    border: 2px solid #004445;
+    background: #faf5e4;
     width: 100%;
     height: 50px;
     font-size: 17px;

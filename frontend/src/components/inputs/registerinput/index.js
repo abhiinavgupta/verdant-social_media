@@ -18,7 +18,7 @@ const test2 = view3 && field.name === "last_name";
 
   return (
     
-    <div className="input_wrap register-input_wrap">
+    <div className="input_wrap register_input_wrap">
     
     <input 
         className={meta.touched && meta.error ?  "input_error_border":""}

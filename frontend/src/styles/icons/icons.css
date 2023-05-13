@@ -466,6 +466,7 @@
   background-repeat: no-repeat;
   display: inline-block;
   filter: invert(40%);
+  
 }
 .edit_icon {
   background-image: url("../../../public/icons/icons18.png");

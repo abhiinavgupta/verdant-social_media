@@ -52,7 +52,7 @@ export default function LoginForm({setVisible}) {
     
     <div className="login_wrap">
         <div className="login_1">
-            <img src="../../icons/facebook.svg" alt="VERDANT" />
+            <img src="verdant-name-logo.png" alt="VERDANT" />
             <span>
                 VERDANT helps you connect and share with people who loves mother nature.
             </span>
@@ -72,21 +72,23 @@ export default function LoginForm({setVisible}) {
                 >
                 {(formik) => (
                     <Form>
+                    
                     <LoginInput type="text" name="email" placeholder="email address or phone number" onChange={handleLoginChange} />
                     <LoginInput type="password" name="password" placeholder="password" onChange={handleLoginChange} bottom />
-                    <button type="submit" className="blue_btn"> Log In</button>
+                    
+                    <button type="submit" className="blue_btn open_signup2"> Log In</button>
                     </Form>
                 )}
                  </Formik>
-                 <Link to="/forgot" className="forget_password">Forgotten Password?</Link>
+                 <Link to="/reset" className="forget_password">Forgotten Password?</Link>
                  <ClockLoader color="#7fa99b" loading={loading} size={30} aria-label="Loading Spinner" data-testid="loader" />
                  {error &&<div className="error_text"> {error}</div>} 
                  <div className="sign_splitter"></div>
                  <div className="blue_btn open_signup" onClick={() => setVisible(true)}>Create Account</div>
             </div>
             <Link to="/" className="sign_extra">
-                <b>Create a page </b>
-                for a Celebrity, Brand or business.
+                <span><b>Create a page </b>
+                for a Celebrity, Brand or business.</span>
             </Link>
         </div>
     </div>

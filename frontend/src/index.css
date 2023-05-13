@@ -53,6 +53,25 @@ gap: 6px;
 cursor: pointer;
 }
 
+.grey_btn {
+  border: none; 
+  outline: none;
+  background:#faf5e4;
+  padding: 8.5px 12px;
+  border-radius: 7px; 
+  font-family: inherit;
+  font-weight: 600; 
+  font-size: medium;
+  color: #2c786c; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  height: 35px;
+  width: 120px ;
+  }
+
 .blur{
    position: fixed;
    top: 0;
