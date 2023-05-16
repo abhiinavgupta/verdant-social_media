@@ -21,8 +21,8 @@ export default function CodeVerification({ code, userInfos, setCode, error, setE
             setLoading(true);
             await axios.post(`${process.env.REACT_APP_BACKEND_URL}/validateResetCode`, { email, code });
             setError("");
-            setLoading(false);
             setVisible(3);
+            setLoading(false);
         }
         catch (error) {
             setLoading(false);
