@@ -8,7 +8,7 @@ import CreatePost from "../../components/createPost";
 import SendVerification from "../../components/home/sendVerification";
 
 
-export default function Home() {
+export default function Home({setPostVisible}) {
   const {user} = useSelector((state) => ( {...state}));
   return (
     <div className="home">
@@ -18,7 +18,7 @@ export default function Home() {
       <Stories />
       {user.verified === false && <SendVerification user={user} />}
       
-      <CreatePost user={user} />
+      <CreatePost user={user} setPostVisible={setPostVisible} />
     </div>
     <RightHome user={user} />
     </div>
