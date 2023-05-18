@@ -3,14 +3,14 @@ import axios from "axios";
 // CREATING NEW POST
 export const createPost = async (type, background, text, images, user, token) => {
     try {
-        const { data } = await axios.post(`${process.env.REACT_APP_LOGIN_URL}/createPost`, {
+        const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/createPost`, {
             type, background, text, images, user,
         }, {
             headers: {
                 Authorization: `Bearer ${token}`,
             }
         });
-        return { status: "ok", data };
+        return { status: "ok", data:data };
     }
     catch (error) {
         return error.response.data.message;

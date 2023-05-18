@@ -22,7 +22,7 @@ exports.getAllPosts = async (req, res) => {
             .find()
             .populate("user", "first_name last_name picture cover username gender")
             .populate("comments.commentBy", "first_name last_name picture username commentAt")
-            .sort({ createdAt: -1 })
+            .sort({ createdAt: -1 });
         // followingPosts.push(...[...userPosts]);
         // followingPosts.sort((a, b) => {
         //     return b.createdAt - a.createdAt;

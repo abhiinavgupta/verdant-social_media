@@ -11,7 +11,7 @@ import UuserMenu from "./userMenu/UuserMenu";
 
 export default function Header() {
     const { user } = useSelector((user) => ({ ...user }));
-    console.log(user)
+
     const color = "#f8b400";
     const[showSearchMenu, setShowSearchMenu] = useState(false);
     const[showAllMenu, setShowAllMenu] = useState(false);
