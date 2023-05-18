@@ -8,9 +8,18 @@ import CreatePost from "../../components/createPost";
 import SendVerification from "../../components/home/sendVerification";
 import Post from "../../components/post";
 import { HashLoader } from "react-spinners";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home({ loading, posts, error, setPostVisible, setRoomOpen, setShowPreview, setType, setFullscreen, setSlideNumber, setPostImages, setCoverType }) {
   const { user } = useSelector((state) => ({ ...state }));
+
+//     const middle = useRef(null);
+//     const[ight,setHeight] = useState();
+//     useEffect(()=>{
+// setHeight(middle.c)
+//     },[]);
+
+
 
   return (
     <div className="home">
@@ -24,7 +33,7 @@ export default function Home({ loading, posts, error, setPostVisible, setRoomOpe
         {loading
           ? <div className="skeleton_loader">
             <HashLoader
-              color="#F51997"
+              color="#004445"
             />
           </div>
           : <div className="posts">

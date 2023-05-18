@@ -28,7 +28,7 @@ export default function PostMenu({ userId, postUserId, imagesLength, postId, tok
     return (
         // <ul className="post_menu" ref={menuRef}>
         <ul className="post_menu">
-            {/* {test && <MenuItem icon="pin_icon" title="Pin Post" subtitle="Pin this post." />} */}
+            {test && <MenuItem icon="pin_icon" title="Pin Post" subtitle="Pin this post." />}
             <div onClick={() => saveHandler()}>
                 {checkSaved
                     ? <MenuItem
@@ -50,18 +50,18 @@ export default function PostMenu({ userId, postUserId, imagesLength, postId, tok
                     <MenuItem icon="download_icon" title="Download" />
                 </div>
             )}
-            {/* {imagesLength && <MenuItem icon="fullscreen_icon" title="Enter Fullscreen" />}
+            {imagesLength && <MenuItem icon="fullscreen_icon" title="Enter Fullscreen" />}
             {test && <MenuItem img="../../../icons/lock.png" title="Edit audience" />}
             {test && <MenuItem icon="turnOffNotifications_icon" title="Turn off notifications for this post" />}
             {test && <MenuItem icon="delete_icon" title="Turn off translations" />}
             {test && <MenuItem icon="date_icon" title="Edit Date" />}
-            {test && <MenuItem icon="refresh_icon" title="Refresh share attachment" />} */}
+            {test && <MenuItem icon="refresh_icon" title="Refresh share attachment" />}
             {test && <div className="line"></div>}
-            {/* {test && <MenuItem icon="archive_icon" title="Move to archive" />} */}
+            {test && <MenuItem icon="archive_icon" title="Move to archive" />}
             {test && (
                 <div onClick={() => deleteHandler()}>
                     <MenuItem icon="trash_icon" title="Delete Post" subtitle="Post is deleted from Clang Social" />
-                    {/* <MenuItem icon="trash_icon" title="Move to trash" subtitle="Items in trash are deleted after 30 days" /> */}
+                    <MenuItem icon="trash_icon" title="Move to trash" subtitle="Items in trash are deleted after 30 days" />
                 </div>
             )}
             {!test && <div className="line"></div>}

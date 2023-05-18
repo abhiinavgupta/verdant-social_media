@@ -81,6 +81,24 @@ cursor: pointer;
    background: rgba(255, 255, 255, 0.768);
    z-index: 99;
 }
+.yellow_btn {
+  border: 1px solid #004445; 
+  /* outline: none; */
+  background:#faf5e4;
+  padding: 8.5px 12px;
+  border-radius: 7px; 
+  font-family: inherit;
+  font-weight: 600; 
+  font-size: medium;
+  color: #2c786c; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  height: 25px;
+  width: 80px ;
+  }
 
 
 /* ---------------hovers---------------- */

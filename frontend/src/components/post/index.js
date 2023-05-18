@@ -107,14 +107,14 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
                                 <Moment fromNow interval={30}>
                                     {post.createdAt}
                                 </Moment>
-                                &nbsp;•&nbsp;<Public color="#F51997" />
+                                &nbsp;•&nbsp;<Public color="#004445" />
                                 {/* &nbsp;❁&nbsp;<Public color="#F51997"/> */}
                                 {/* &nbsp;●&nbsp;<Public color="#F51997" /> */}
                             </div>
                         </div>
                     </Link>
-                    <div className="post_header_right_second hover1" onClick={() => setShowMenu(prev => !prev)}>
-                        <Dots color="#828387" />
+                    <div className="post_header_right_second hover4" onClick={() => setShowMenu(prev => !prev)}>
+                        <Dots color="#004445" />
                     </div>
                 </div>
                 {post.background ? (
@@ -229,7 +229,7 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
                 <div className="post_actions">
                     <ReactPopup reactHandler={reactHandler} visible={visible} setVisible={setVisible} />
                     <div
-                        className="post_action"
+                        className="post_action hover4"
                         // className="post_action hover4"
                         onMouseOver={() => {
                             setTimeout(() => {
@@ -270,7 +270,7 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
                         </span>
                     </div>
                     {/* <div className="post_action hover3" onClick={() => toggleComments()}> */}
-                    <div className="post_action" onClick={() => toggleComments()}>
+                    <div className="post_action hover4" onClick={() => toggleComments()}>
                         <i className="comment_icon"></i>
                         <span>Comments</span>
                         {/* <div className="span_second">{comments && comments.length > 0 && `(${comments.length})`}</div> */}

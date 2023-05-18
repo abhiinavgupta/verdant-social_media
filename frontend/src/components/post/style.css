@@ -63,19 +63,19 @@
 }
 
 .posts {
-    margin-top: 0.6rem;
+    margin-top: 1rem;
     /* margin-top: 1rem; */
     width: 100%;
 }
 
 .post {
     position: relative;
-    /* width: 680px; */
-    background: var(--bg-primary);
+    width: 680px;
+    background: #ffda74;
     border-radius: 10px;
     box-shadow: 0 1px 2px var(--shadow-1);
     user-select: none;
-    color: var(--color-primary);
+    color: #004445;
     margin-bottom: 10px;
 }
 
@@ -97,6 +97,7 @@
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #004445;
 }
 
 .header_col {
@@ -109,7 +110,7 @@
     align-items: center;
     gap: 5px;
     line-height: 19px;
-    color: var(--color-primary);
+    color: #004445;
     font-size: 14px;
     font-weight: 600;
 }
@@ -381,7 +382,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #fff;
+    color: #004445;
     /* color: var(--pink-color); */
 }
 
@@ -410,22 +411,24 @@
 
 .reacts_count_num {
     font-size: 14px;
-    color: var(--color-secondary);
+    color: #004445;
 }
 
 .to_right {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--color-secondary);
+    color: #004445;
     font-size: 15px;
 }
 
-/* .comments_count:hover,
+
+
+.comments_count:hover,
 .share_count:hover {
     cursor: pointer;
     text-decoration: underline;
-} */
+}
 
 .post_actions {
     position: relative;
@@ -433,8 +436,9 @@
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-columns: repeat(3, 1fr); */
     padding: 0 8px 5px 8px;
-    border-top: 1px solid var(--bg-third);
-    border-bottom: 1px solid var(--bg-third);
+    border-top: 3px solid #004445;
+    border-bottom: 3px solid #004445;
+    border-radius: 25%;
     margin: 0 10px;
     padding: 5px 0;
 }
@@ -451,7 +455,7 @@
 }
 
 .post_action span {
-    color: var(--color-secondary);
+    color: #004445;
     font-size: 14px;
     text-transform: capitalize;
     font-weight: bold;
@@ -471,11 +475,11 @@
     align-items: center;
     position: absolute;
     top: -3.4rem;
-    background: var(--bg-primary);
+    background: #004445;
     padding: 5px 15px;
     border-radius: 50px;
     gap: 8px;
-    box-shadow: 0 10px 20px 0 var(--light-pink-color-blur), 0 2px 4px 0 var(--light-pink-color);
+    box-shadow: 0 10px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .react {
@@ -484,7 +488,7 @@
 }
 
 .react:hover {
-    transform: scale(1.3);
+    transform: scale(1.9);
 }
 
 .react img {
@@ -509,6 +513,7 @@
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #004445;
 }
 
 .myArrow {
@@ -521,10 +526,13 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background: var(--bg-forth);
+    background: #f8b400;
     border-radius: 50px;
     padding-right: 10px;
+    color: #004445;
+    border: 2px solid #004445;
 }
+
 
 .comment_input_wrap input {
     outline: none;
@@ -532,7 +540,7 @@
     flex: 1;
     height: 35px;
     padding: 0 10px;
-    color: var(--color-primary);
+    color: #004445;
     background: transparent;
 }
 
@@ -548,6 +556,7 @@
 .comment_error {
     padding: 0 !important;
     opacity: 1 !important;
+
 }
 
 .comment_img_preview {
@@ -561,21 +570,22 @@
     width: 150px;
     height: 100px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .comment_img_preview .small_white_circle {
-    top: -6px;
-    right: 5px;
-    transform: scale(0.8);
+    top: -10px;
+    right: -5px;
+    transform: scale(0.5);
+    border: 2px solid #004445 ;
 }
 
 
 /*------POST MENU------*/
 .post_menu {
-    background: var(--bg-primary);
+    background: #fda403;
     width: 300px;
-    box-shadow: 0 12px 20px 0 var(--light-pink-color-blur), 0 2px 4px 0 var(--light-pink-color);
+    box-shadow: 0 12px 20px 0 #000, 0 2px 4px 0 #000;
     /* box-shadow: 1px 0 2px var(--shadow-1); */
     border-radius: 10px;
     position: absolute;

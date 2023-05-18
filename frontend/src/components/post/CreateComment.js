@@ -138,7 +138,7 @@ export default function CreateComment({ user, postId, setComments, setCount }) {
                     {error &&
                         <div className="postError_zindex comment_error">
                             <div className="postError_error">{error}</div>
-                            <button className="pink_btn" onClick={() => { setError("") }}>Retry</button>
+                            <button className="yellow_btn" onClick={() => { setError("") }}>Retry</button>
                         </div>
                     }
                     <input
@@ -150,7 +150,7 @@ export default function CreateComment({ user, postId, setComments, setCount }) {
                         onKeyUp={handleComment}
                     />
                     {!loading
-                        ? <div className="comment_circle_icon" onClick={() => handleCommentButton()}>
+                        ? <div className="comment_circle_icon hover4 " onClick={() => handleCommentButton()}>
                             <i className="right_icon filter_pink myArrow"></i>
                         </div>
                         : <div className="comment_circle" style={{ marginTop: "5px" }}>
@@ -159,10 +159,10 @@ export default function CreateComment({ user, postId, setComments, setCount }) {
                                 color="#F51997"
                             />
                         </div>}
-                    <div className="comment_circle_icon hover2" onClick={() => { setPicker(prev => !prev) }}>
+                    <div className="comment_circle_icon hover4" onClick={() => { setPicker(prev => !prev) }}>
                         <i className="emoji_icon"></i>
                     </div>
-                    <div className="comment_circle_icon hover2" onClick={() => imgRef.current.click()}>
+                    <div className="comment_circle_icon hover4" onClick={() => imgRef.current.click()}>
                         <i className="camera_icon"></i>
                     </div>
                     {/* <div className="comment_circle_icon hover2" >

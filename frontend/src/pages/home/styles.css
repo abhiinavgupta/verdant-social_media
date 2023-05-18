@@ -1,7 +1,9 @@
 .home {
-    min-height: 100vh;
+    min-height: 2000vh;
+    /* 93. resposive page 9:34 */
+    /* height: 100%; */
     background: #002d2e;
-    position: relative;
+    /* position: relative; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
@@ -48,7 +50,8 @@
     }
 
     .left_home {
-        width: 70px;
+        width: 60px;
+        background-color: #004445;
     }
 
     .left_link {
