@@ -73,7 +73,7 @@
     width: 680px;
     background: #ffda74;
     border-radius: 10px;
-    box-shadow: 0 1px 2px var(--shadow-1);
+    box-shadow: 0 2px 3px 0 #fda403;
     user-select: none;
     color: #004445;
     margin-bottom: 10px;
@@ -589,7 +589,7 @@
     /* box-shadow: 1px 0 2px var(--shadow-1); */
     border-radius: 10px;
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     right: 10px;
     z-index: 99;
     font-family: inherit;
@@ -615,14 +615,15 @@
 
 .menu_post_col {
     font-size: 12px;
-    color: #65676b;
+    color: #004445;
 }
 
 .line {
     width: 100%;
-    height: 1px;
-    background: #ced0d4;
+    height: 3px;
+    background: #004445;
     margin: 5px 0;
+    border-radius: 50%;
 }
 
 .post_profile_wrap {

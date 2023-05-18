@@ -325,6 +325,7 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
                             images={post?.images}
                             imagesName={post?.user?.first_name}
                             postRef={postRef}
+                            setShowMenu={setShowMenu}
                         />
                     }
                 </div>

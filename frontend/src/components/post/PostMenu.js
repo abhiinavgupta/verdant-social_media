@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import MenuItem from "./MenuItem";
 import { deletePost, savePost } from "../../functions/post";
 import { saveAs } from "file-saver";
+import useonClickOutside from "../../helpers/clickOutside";
 
-export default function PostMenu({ userId, postUserId, imagesLength, postId, token, checkSaved, setCheckSaved, images, imagesName, postRef }) { // eslint-disable-next-line
+export default function PostMenu({ userId, postUserId, imagesLength, postId, token, checkSaved, setCheckSaved, images, imagesName, postRef , setShowMenu}) { // eslint-disable-next-line
     const [test, setTest] = useState(postUserId === userId ? true : false);
+      
+    const menu = useRef(null);
+     useonClickOutside(menu,()=>setShowMenu(false));
 
     const saveHandler = async () => {
         savePost(postId, token);
@@ -27,7 +31,7 @@ export default function PostMenu({ userId, postUserId, imagesLength, postId, tok
 
     return (
         // <ul className="post_menu" ref={menuRef}>
-        <ul className="post_menu">
+        <ul className="post_menu" ref={menu}>
             {test && <MenuItem icon="pin_icon" title="Pin Post" subtitle="Pin this post." />}
             <div onClick={() => saveHandler()}>
                 {checkSaved
@@ -42,9 +46,9 @@ export default function PostMenu({ userId, postUserId, imagesLength, postId, tok
                         subtitle="Save this post to your saved items."
                     />}
             </div>
-            {/* <div className="line"></div> */}
-            {/* {test && <MenuItem icon="edit_icon" title="Edit Post" />}
-            {!test && <MenuItem icon="turnOnNotification_icon" title="Turn on notifications for this post" />} */}
+            <div className="line"></div>
+            {test && <MenuItem icon="edit_icon" title="Edit Post" />}
+            {!test && <MenuItem icon="turnOnNotification_icon" title="Turn on notifications for this post" />}
             {imagesLength && (
                 <div onClick={() => downloadImages()}>
                     <MenuItem icon="download_icon" title="Download" />
@@ -60,7 +64,7 @@ export default function PostMenu({ userId, postUserId, imagesLength, postId, tok
             {test && <MenuItem icon="archive_icon" title="Move to archive" />}
             {test && (
                 <div onClick={() => deleteHandler()}>
-                    <MenuItem icon="trash_icon" title="Delete Post" subtitle="Post is deleted from Clang Social" />
+                    <MenuItem icon="trash_icon" title="Delete Post" subtitle="Post is deleted from Verdant" />
                     <MenuItem icon="trash_icon" title="Move to trash" subtitle="Items in trash are deleted after 30 days" />
                 </div>
             )}
