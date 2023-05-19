@@ -74,6 +74,7 @@ console.log(posts);
 
 <Route element={<LoggedInRoute />}>
 <Route path="/profile" element={ <Profile />} exact />
+<Route path="/profile/:username" element={ <Profile />} exact />
 <Route path="/" element={ <Home setPostVisible={setPostVisible} 
 posts={posts}
  />} exact />
