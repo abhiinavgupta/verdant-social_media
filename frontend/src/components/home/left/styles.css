@@ -10,7 +10,8 @@
     padding-bottom: 5rem;
     user-select: none;
     border-radius: 20px;
-    
+    border: 4px double #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     
 }
 /* .scrollbar{

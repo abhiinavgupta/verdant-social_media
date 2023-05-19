@@ -71,12 +71,12 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
     return (
         <div className="friendship">
             {friendship?.following ? (
-                <button className="gray_btn" onClick={() => unfollowHandler()}>
+                <button className="story_btn" onClick={() => unfollowHandler()}>
                     <img src="../../../icons/following.png" alt="" />
                     <span>Following</span>
                 </button>
             ) : (
-                <button className="pink_btn" onClick={() => followHandler()}>
+                <button className="story_btn" onClick={() => followHandler()}>
                     <img src="../../../icons/follow.png" className="invert" alt="" />
                     <span>Follow</span>
                 </button>
@@ -84,7 +84,7 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
             <div className="flex">
                 {friendship?.friends ? (
                     <div className="friends_menu_wrap">
-                        <button className="gray_btn" onClick={() => setFriendsMenu(true)}>
+                        <button className="story_btn" onClick={() => setFriendsMenu(true)}>
                             <img src="../../../icons/friends.png" alt="" />
                             <span>Friends</span>
                         </button>
@@ -117,13 +117,13 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                         )}
                     </div>
                 ) : !friendship?.requestSent && !friendship?.requestReceived && (
-                    <button className="pink_btn" onClick={() => addFriendHandler()} >
+                    <button className="story_btn" onClick={() => addFriendHandler()} >
                         <img src="../../../icons/addFriend.png" className="filter_white" alt="" />
                         <span>Be Friends</span>
                     </button>
                 )}
                 {friendship?.requestSent ? (
-                    <button className="gray_btn" onClick={() => cancelRequestHandler()}>
+                    <button className="story_btn" onClick={() => cancelRequestHandler()}>
                         <img src="../../../icons/cancelRequest.png" alt="" />
                         <span>Cancel Request</span>
                     </button>
@@ -151,7 +151,7 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                     )
                 )
                 }
-                <button className={friendship?.friends ? "pink_btn" : "gray_btn"}>
+                <button className={friendship?.friends ? "story_btn" : "story_btn"}>
                     <img src="../../../icons/message.png" className={friendship?.friends ? "invert" : ""} alt="" />
                     <span>Message</span>
                 </button>

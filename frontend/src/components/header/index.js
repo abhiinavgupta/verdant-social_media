@@ -9,7 +9,7 @@ import useClickOutside from "../../helpers/clickOutside";
 
 import UuserMenu from "./userMenu/UuserMenu";
 
-export default function Header() {
+export default function Header({ page }) {
     const { user } = useSelector((user) => ({ ...user }));
 
     const color = "#f8b400";
@@ -58,8 +58,12 @@ export default function Header() {
      setShowSearchMenu={setShowSearchMenu} /> }
     
     <div className="header_middle">
-        <Link to="/" className="middle_icon hover1 active">
-            <HomeActive />
+        <Link to="/" className={`middle_icon hover1 ${ page ==="home" ? "active" : "hover1"}`}>
+        { page ==="home" ? <HomeActive /> :  <Home color={"#f8b400"} /> }
+
+
+           
+           
         </Link>
         <Link to="/" className="middle_icon hover1">
             <Friends color={color} />
@@ -77,7 +81,7 @@ export default function Header() {
 
 
     <div className="header_right">
-        <Link to="/profile" className="profile_link hover1">
+        <Link to="/profile" className={`profile_link hover1 ${page === "profile" ? 'activate_link' : '' }`}>
             <img src={user?.picture} alt="" />
             <span>{user?.first_name}</span>
         </Link>

@@ -4,6 +4,7 @@
     grid-template-columns: repeat(6, 105px);
     gap: 10px;
     padding: 6px 0;
+    
   }
   
   .create_story_card {
@@ -58,7 +59,9 @@
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 2px var(--shadow-1);
+    /* box-shadow: 0 1px 2px var(--shadow-1); */
+    border: 4px double #f8b400;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     
   }
   

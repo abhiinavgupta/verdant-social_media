@@ -30,18 +30,22 @@ export default function ProfilePictureInfos({ profile, visitor, othername, photo
                         }}
                     >
                     </div>
-                    {!visitor &&
+                    {!visitor && (
                         <div className="profile_circle hover5" onClick={() => { setShow(true) }}>
                             <i className="camera_filled_icon"></i>
-                        </div>
+                        </div> )
                     }
                 </div>
                 <div className="profile_w_col">
                     <div className="profile_name">
-                        <div className="first_last">{profile?.first_name} {profile?.last_name}</div>
-                        <div className="othername">{othername && `${othername}`}</div>
+                        <div className="first_last">
+                        {profile?.first_name} {profile?.last_name}
+                        </div>
+                        <div className="othername">
+                        {othername && `${othername}`}
+                        </div>
                     </div>
-                    <div className="profile_friend_count gray_btn">
+                    <div className="profile_friend_count">
                         {profile?.followers && (
                             <div className="profile_card_count">
                                 <span>{followCount}</span>
@@ -80,19 +84,20 @@ export default function ProfilePictureInfos({ profile, visitor, othername, photo
                 //     profileid={profile._id}
                 // />
             ) : (
-                ""
-                // <div className="profile_w_right">
-                //     <div className="light_pink_btn">
-                //         <img src="../../../icons/plus.png" className="invert" alt="" />
-                //         <span>Add to Story</span>
-                //     </div>
-                //     <div className="gray_btn">
-                //         <i className="edit_icon"></i>
-                //         <span>Edit Profile</span>
-                //     </div>
-                // </div >
+                <>
+                <div className="profile_w_right">
+                   <div className="story_btn hover4">
+                       <img src="../../../icons/plus.png" className="" alt="" />
+                     <span>Add to Story</span>
+                   </div>
+                     <div className="story_btn hover4">
+                         <i className="edit_icon"></i>
+                       <span>Edit Profile</span>
+                    </div>
+                 </div>
+                 </>
             )
             }
-        </div >
+        </div>
     )
 }

@@ -73,10 +73,12 @@
     width: 680px;
     background: #ffda74;
     border-radius: 10px;
-    box-shadow: 0 2px 3px 0 #fda403;
+    /* box-shadow: 0 2px 3px 0 #fda403; */
     user-select: none;
     color: #004445;
     margin-bottom: 10px;
+    border: 4px double #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .post_header {

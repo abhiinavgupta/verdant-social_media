@@ -72,6 +72,26 @@ cursor: pointer;
   width: 120px ;
   }
 
+  .story_btn {
+    border: none; 
+    outline: none;
+    background:#efdca6;
+    padding: 8.5px 12px;
+    border-radius: 7px; 
+    font-family: inherit;
+    font-weight: 600; 
+    font-size: medium;
+    color: #2c786c; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    height: 45px;
+    width: 140px ;
+    border: 3px double #004445;
+    }
+
 .blur{
    position: fixed;
    top: 0;
@@ -119,6 +139,9 @@ cursor: pointer;
 .hover5:hover{
   color: #f8b400 !important;
   background: #faf5e4;
+}
+.hover6:hover{
+  background: #efdca6;
 }
 /* ---------------hovers---------------- */
 

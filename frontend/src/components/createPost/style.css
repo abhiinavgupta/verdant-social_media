@@ -1,10 +1,12 @@
 .createPost {
     background: #ffda74;
     border-radius: 10px;
-    box-shadow: 0 1px 2px var(--shadow-1);
-    margin-top: 1.1rem;
+    /* box-shadow: 0 1px 2px var(--shadow-1); */
+    margin-top: 0.4rem;
     width: 100%;
     cursor: pointer;
+    border: 4px double #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .createPost_header {

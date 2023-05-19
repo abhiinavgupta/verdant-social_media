@@ -8,8 +8,8 @@ import "./styles.css";
 import Cover from "./Cover";
 import ProfilePictureInfos from "./ProfilePictureInfos";
 // import ProfileMenu from "./ProfileMenu";
-// import PeopleDiscovery from "./PeopleDiscovery";
-// import CreatePost from "../../components/createPost";
+import PeopleDiscovery from "./PeopleDiscovery";
+import CreatePost from "../../components/createPost";
 import GridPosts from "./GridPosts";
 import Post from "../../components/post";
 // import Photos from "./Photos";
@@ -21,14 +21,16 @@ import Skeleton from "react-loading-skeleton";
 // import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { HashLoader } from "react-spinners";
+import ProfileMenu from "./ProfileMenu";
 
 
-export default function Profile({ setSlideNumber, setFullscreen, setPostImages }) {
+export default function Profile({ setSlideNumber, setFullscreen, setPostImages , setPostVisible}) {
   // export default function Profile({ getAllPosts }) {
   const navigate = useNavigate();
   const { username } = useParams();
   const { user } = useSelector((state) => ({ ...state }));
   const [photos, setPhotos] = useState({});
+  // const [showCoverMenu, setShowCoverMenu] = useState(false);
   // const [postVisible, setPostVisible] = useState(false);
   var userName = username === undefined ? user.username : username; // eslint-disable-next-line
   const [{ loading, profile, error }, dispatch] = useReducer(profileReducer, {
@@ -82,6 +84,8 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
     getProfile();
   }, [navigate, path, user.token, userName]);
 
+  
+
   var visitor = userName === user.username ? false : true;
   const profileTop = useRef(null);
   const [height, setHeight] = useState();
@@ -132,7 +136,7 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
             <>
               <div className="profile_cover">
                 <Skeleton
-                  // highlightColor="pink"
+                  highlightColor="pink"
                   height="347.5px"
                   containerClassName="avatar-skeleton"
                   style={{
@@ -217,16 +221,17 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
             <>
               <Cover cover={profile?.cover} visitor={visitor} photos={photos.resources} />
               <ProfilePictureInfos profile={profile} visitor={visitor} othername={othername} photos={photos.resources} />
+              
             </>
           }
-          {/* <ProfileMenu /> */}
+          <ProfileMenu />
         </div>
       </div>
 
       <div className="profile_bottom">
         <div className="profile_container">
           <div className="bottom_container">
-            {/* <PeopleDiscovery /> */}
+            <PeopleDiscovery />
             <div
               className={
                 `profile_grid ${check && scrollHeight >= height && leftHeight > 800
@@ -242,7 +247,7 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
                       <div className="profile_card_header">Intro</div>
                       <div className="skeleton_loader">
                         <HashLoader
-                          color="#F51997"
+                          color="#004445"
                         />
                       </div>
                     </div>
@@ -258,11 +263,13 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
                     </div> */}
                     <div className="profile_card">
                       <div className="profile_card_header">Friends
-                        {photos && photos.total_count > 0 && <div className="profile_header_link hover4">See all</div>}
+                        {photos && photos.total_count > 0 && 
+                        <div className="profile_header_link hover4">See all</div>
+                        }
                       </div>
                       <div className="skeleton_loader">
                         <HashLoader
-                          color="#F51997"
+                          color="#004445"
                         />
                       </div>
                     </div>
@@ -285,12 +292,16 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
               </div>
               <div className="profile_right">
                 <div className="seperator">
-                  {/* {loading ?
+                {/* <CreatePost /> */}
+                  {loading ?
                     ""
-                    : !visitor && <CreatePost profile user={user} setPostVisible={setPostVisible} />
-                  } */}
-                  <GridPosts />
-                  {/* <GridPosts profile={profile} /> */}
+                    : !visitor && 
+
+                    <CreatePost 
+                    profile user={user} setPostVisible={setPostVisible} />
+                  }
+                  {/* <GridPosts /> */}
+                  <GridPosts profile={profile} />
                 </div>
                 {/* {loading
                   ? <div className="skeleton_loader">
@@ -307,11 +318,11 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages }
                       loading ? (
                         <div className="skeleton_loader">
                           <HashLoader
-                            color="#F51997"
+                            color="#004445"
                           />
                         </div>
                       )
-                        : < div className="no_posts">No Posts yet...</div>
+                        : ( <div className="no_posts"> No Posts yet... </div>)
                     )
                   }
                 </div>

@@ -8,9 +8,9 @@
 }
 
 .profile_top {
-    margin-top: 70px;
-    box-shadow: 0 1px 2px var(--shadow-1);
-    background: var(--bg-primary);
+    margin-top: 0;
+    box-shadow: 0 1px 2px #000;
+    background: #004445;
 }
 
 .profile_container {
@@ -25,7 +25,9 @@
     width: 100%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background: var(--bg-secondary);
+    background: #efdca6;
+    border: 5px double #004445 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .cover {
@@ -129,32 +131,33 @@
 }
 
 .open_cover_update {
-    background: #fff;
+    background: #4e847c;
     padding: 7px 15px;
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
     font-size: 14px;
-    color: var(--color-secondary);
+    color: #efdca6;
     border-radius: 10px;
     cursor: pointer;
+    border: 4px double ;
 }
 
 .open_cover_update i {
-    transform: scale(0.9);
+    transform: scale(1.1);
     margin-top: 2px;
 }
 
 .open_cover_menu {
     margin-top: 1px;
-    background: var(--bg-primary);
+    background: #f8b400;
     position: absolute;
     right: 0;
     padding: 10px;
     width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 12px 20px 0 var(--light-pink-color-blur), 0 2px 4px 0 var(--light-pink-color);
+    border-radius: 30px;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     /* box-shadow: 0 12px 20px var(--shadow-1); */
     z-index: 999;
 }
@@ -179,7 +182,7 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .profile_img_wrap {
@@ -202,14 +205,17 @@
 }
 
 .profile_w_bg {
-    width: 180px;
-    height: 180px;
-    transform: translateY(-3.6rem);
+    width: 280px;
+    height: 280px;
+    transform: translateY(-4.6rem);
     border-radius: 50%;
     background-repeat: no-repeat;
     border: 2px solid #fff;
-    background: #fff;
+    background: #efdca6;
     cursor: pointer;
+    border: 5px double #004445 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+    
 }
 
 .profile_w_bg:hover {
@@ -218,15 +224,17 @@
 
 .profile_circle {
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 6.5rem;
     right: 0;
-    background: var(--light-pink-color-blur);
-    width: 36px;
-    height: 36px;
+    background: #2c786c;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     display: grid;
     place-items: center;
     cursor: pointer;
+    border: 5px double #004445 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .profile_name {
@@ -235,8 +243,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* font-weight: 700; */
-    /* font-size: 32px; */
+    font-weight: 700; 
+    font-size: 32px;
+    color: #f8b400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .first_last {
@@ -245,7 +255,7 @@
 }
 
 .othername {
-    color: var(--color-secondary);
+    color: #efdca6;
     font-size: 18px;
     font-weight: 600;
 }
@@ -254,12 +264,12 @@
     display: flex;
     align-items: center;
     font-weight: 600;
-    gap: 10px;
-    /* border: 1px solid var(--pink-color); */
+    gap: 20px;
+     /* border: 1px solid; */
 }
 
 .profile_friend_count.gray_btn {
-    cursor: default;
+    cursor: pointer;
     background: none;
 }
 
@@ -289,6 +299,7 @@
 
 .invert {
     filter: invert(100%);
+    
 }
 
 .friends_menu_wrap {
@@ -304,7 +315,7 @@
 
 .profile_menu {
     position: relative;
-    border-top: 1px solid var(--border-color);
+    border-top: 2px solid #f8b400;
     display: flex;
     padding: 0;
 }
@@ -320,21 +331,22 @@
     justify-content: center;
     border-radius: 10px;
     margin: 3px 0;
-    color: var(--color-secondary);
+    color: #49988c;
 }
 
 .profile_menu_active {
     height: 60px !important;
     width: 65px !important;
     margin: 0 !important;
-    color: var(--pink-color) !important;
-    border-bottom: 3px solid var(--pink-color);
+    color: #f8b400 !important;
+    border-bottom: 5px solid #f8b400;
     border-radius: 0 !important;
+    font-weight: 600;
 }
 
 .p10_dots {
     position: absolute;
-    /* background: var(--bg-third); */
+    /* background: #2c786c; */
     right: 0;
     top: 10px;
     border-radius: 5px;
@@ -356,19 +368,22 @@
 
 .profile_bottom {
     margin-top: 1px;
-    background-color: var(--bg-secondary);
+    background-color: #f8edca;
 }
 
 .bottom_container {
-    padding: 10px 2.2rem;
+    padding: 10px 0rem;
 }
 
 .pplumayknow {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: 3px solid var(--pink-color-btn);
+    border: 3px double #f8b400;
     padding: 10px 15px;
+    background-color: #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+    
 }
 
 .pplumayknow_header {
@@ -376,7 +391,8 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 25px;
+    color: #f8b400;
 }
 
 .pplumayknow_list {
@@ -393,7 +409,8 @@
     width: 150px;
     border-radius: 10px;
     overflow: hidden;
-    background: var(--bg-primary);
+    background: #49988c;
+    border: 2px double #f8b400;
 }
 
 .addfriend_imgsmall {
@@ -419,20 +436,22 @@
 .addfriend_name {
     font-size: 16px;
     font-weight: 600;
+    color: #efdca6;
 }
 
 .light_pink_btn_second img {
-    width: 20px;
+    width: 15px;
 }
 
 .pplumayknow_list .light_pink_btn_second {
-    color: var(--pink-color);
+    color: #efdca6;
 }
 
 .profile_grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1.8fr;
     gap: 10px;
+    margin-top: 8px;
 }
 
 /*--------------------------------------------------------*/
@@ -440,12 +459,14 @@
 .left_header_grid {
     font-size: 22px;
     font-weight: 600;
+    color: #004445;
 }
 
 .flex {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #004445;
 }
 
 .grid2 {
@@ -456,18 +477,21 @@
 
 .view_type {
     width: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
     font-weight: 600;
-    color: var(--color-secondary);
+    color: #004445;
 }
 
 .grid2 .active {
-    color: var(--pink-color);
+    color: #004445;
 }
-
+.active2{
+    border-bottom: 4px solid #004445;
+}
 .no_posts {
     height: 100px;
     display: flex;
@@ -475,7 +499,7 @@
     justify-content: center;
     font-weight: 700;
     font-size: 20px;
-    color: var(--color-secondary);
+    color: #004445;
 }
 
 /*--------------------------------------------------------*/
@@ -516,7 +540,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--color-secondary);
+    color: #f8b400;
 }
 
 .profile_card_grid {
@@ -734,6 +758,7 @@
 .scrollFixed .profile_right {
     margin-left: 370px;
     width: 504px;
+    
 }
 
 .showLess .profile_left {

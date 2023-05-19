@@ -57,7 +57,7 @@ function App() {
 
   };
 
-console.log(posts);
+// console.log(posts);
   return <div>
   {postVisible &&
         <CreatePostPopup 
@@ -73,8 +73,8 @@ console.log(posts);
 <Routes>
 
 <Route element={<LoggedInRoute />}>
-<Route path="/profile" element={ <Profile />} exact />
-<Route path="/profile/:username" element={ <Profile />} exact />
+<Route path="/profile" element={ <Profile  setPostVisible={setPostVisible} />} exact />
+<Route path="/profile/:username" element={ <Profile setPostVisible={setPostVisible} />} exact />
 <Route path="/" element={ <Home setPostVisible={setPostVisible} 
 posts={posts}
  />} exact />

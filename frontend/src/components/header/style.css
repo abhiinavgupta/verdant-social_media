@@ -744,9 +744,10 @@ input.themeInput[type='radio']:checked:after {
 }
 
 .activate_link {
-    background: var(--light-pink-color-blur);
-    color: var(--pink-color);
+    background: #f8b400;
+    color: #004445;
 }
+
 
 .activate_image {
     width: 30px;
