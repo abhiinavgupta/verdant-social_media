@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { profileReducer } from "../../functions/reducers";
 import { useEffect, useReducer, useRef, useState } from "react";
 import axios from "axios";
@@ -12,7 +12,7 @@ import PeopleDiscovery from "./PeopleDiscovery";
 import CreatePost from "../../components/createPost";
 import GridPosts from "./GridPosts";
 import Post from "../../components/post";
-// import Photos from "./Photos";
+import Photos from "./Photos";
 import Friends from "./Friends";
 import Intro from "../../components/intro";
 import { useMediaQuery } from "react-responsive";
@@ -231,7 +231,7 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
       <div className="profile_bottom">
         <div className="profile_container">
           <div className="bottom_container">
-            <PeopleDiscovery />
+            {/* <PeopleDiscovery /> */}
             <div
               className={
                 `profile_grid ${check && scrollHeight >= height && leftHeight > 800
@@ -251,16 +251,18 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
                         />
                       </div>
                     </div>
-                    {/* <div className="profile_card">
+                    <div className="profile_card">
                       <div className="profile_card_header">Photos
-                        {photos && photos.total_count > 0 && <div className="profile_header_link hover4">See all</div>}
+                        {photos && photos.total_count > 0 && 
+                        <div className="profile_header_link hover4">See all</div>
+                        }
                       </div>
                       <div className="skeleton_loader">
                         <HashLoader
                           color="#F51997"
                         />
                       </div>
-                    </div> */}
+                    </div>
                     <div className="profile_card">
                       <div className="profile_card_header">Friends
                         {photos && photos.total_count > 0 && 
@@ -276,19 +278,20 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
                   </>
                   : <>
                     <Intro detailss={profile.details} visitor={visitor} setOthername={setOthername} />
-                    {/* <Photos photos={photos} /> */}
+                    <Photos photos={photos} />
                     <Friends friends={profile.friends} />
                   </>
                 }
-                {/* <div className="relative_cs_copright">
+                <div className="relative_cs_copyright">
                   <div>
-                    <Link to="/">Privacy&nbsp; </Link>
-                    <Link to="/">Terms&nbsp; </Link>
-                    <Link to="/">Cookies&nbsp; </Link>
-                    <Link to="/">More&nbsp; </Link>
+                    <Link to="/">Privacy&nbsp; . </Link>
+                    <Link to="/">Terms&nbsp; . </Link>
+                    <Link to="/">Cookies&nbsp; . </Link>
+                    <Link to="/">Ad Choices&nbsp; <i className="ad_choices_icon"></i>. </Link>
+                    <Link to="/">More&nbsp; .</Link>
                   </div>
-                  <Link to="/">Casuals4Fun © 2022</Link>
-                </div> */}
+                  <Link to="/">Verdant © 2023</Link>
+                </div>
               </div>
               <div className="profile_right">
                 <div className="seperator">

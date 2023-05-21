@@ -2,6 +2,8 @@
     width: 700px !important;
 
     height: 700px;
+    border: 5px solid #f8b400 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .update_picture_wrap {
@@ -34,44 +36,46 @@
     width: 100%;
     height: 85px;
     resize: none;
-    border-radius: 7px;
-    outline-offset: 5px;
-    border-color: var(--bg-third);
+    border-radius: 20px;
+    outline-offset: 2px;
+    border-color: #f8b400;
     padding: 1.1rem;
     font-size: 16px;
     font-family: inherit;
-    background: var(--bg-primary);
-    color: var(--color-primary);
+    background-color: #f8b400;
+    color: #004445;
 }
 
 .textarea_pink:focus {
-    outline-color: var(--pink-color);
+    outline-color: #004445;
 }
 
 .textarea_pink:hover {
-    border-color: var(--color-secondary);
+    border-color: #000;
 }
 
 .update_center {
     position: relative;
-    /* height: 400px; */
     height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
-.crooper {
+.cropper {
     position: relative;
     display: flex;
     justify-content: center;
     height: 300px;
-    width: 100%;
+    width: 90%;
+    border-radius: 20%;
+    
 }
 
-.crooper img {
+.cropper img {
     width: 100%;
     object-fit: contain;
 }
@@ -79,7 +83,7 @@
 .update_img .reactEasyCrop_CropAreaGrid {
     width: 300px !important;
     height: 300px !important;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.956);
 }
 
 .slider {
@@ -87,7 +91,7 @@
     bottom: -20px;
     width: 100%;
     display: flex;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     justify-content: center;
@@ -98,7 +102,7 @@
     appearance: none;
     width: 55%;
     height: 4px;
-    background: var(--pink-color-btn);
+    background: #f8b400;
     border-radius: 5px;
 }
 
@@ -109,7 +113,9 @@
     height: 20px;
     border-radius: 50%;
     outline: none;
-    background: var(--pink-color);
+    background: #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+    border: 1px solid #f8b400;
 }
 
 .slider_circle {
@@ -119,6 +125,8 @@
     place-items: center;
     border-radius: 50%;
     cursor: pointer;
+    background-color: #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .flex_up {
@@ -127,6 +135,7 @@
     justify-content: center;
     gap: 15px;
     margin-top: 2rem;
+
 }
 
 .flex_p_t {
@@ -134,9 +143,9 @@
     align-items: center;
     gap: 10px;
     padding: 15px;
-    color: var(--color-secondary);
+    color: #f8b400;
     font-size: 17px;
-    border-bottom: 1px solid var(--bg-third);
+    border-bottom: 1px solid #f8b400;
 }
 
 .update_submit_wrap {
@@ -163,6 +172,7 @@
     padding: 15px;
     overflow-y: auto;
     height: 550px;
+    color: #f8b400;
 }
 
 .old_pictures_wrap h4 {
@@ -182,14 +192,17 @@
     border-radius: 10px;
     cursor: pointer;
     object-fit: cover;
+    /* border: 5px double #004445 ; */
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .old_pictures img:hover {
-    filter: brightness(110%);
+    filter: brightness(130%);
 }
 
 .old_pictures:first-of-type {
-    border-bottom: 1px solid var(--bg-third);
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f8b400;
 }
 
 @media (max-width: 720px) {

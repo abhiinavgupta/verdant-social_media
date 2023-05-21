@@ -36,8 +36,8 @@ export default function Bio({
                     {/* <i className="public_icon" />Public */}
                 </div>
                 <div className="flex flex_right">
-                    <div className="gray_btn" onClick={() => !detail ? setShowBio(false) : setShow(false)}>CANCEL</div>
-                    <div className="pink_btn" onClick={() => {
+                    <div className="shadow_btn" onClick={() => !detail ? setShowBio(false) : setShow(false)}>CANCEL</div>
+                    <div className="bio_btn" onClick={() => {
                         updateDetails();
                         setShow(false);
                     }}>

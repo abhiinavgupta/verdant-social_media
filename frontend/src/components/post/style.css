@@ -516,6 +516,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .myArrow {
@@ -533,6 +534,7 @@
     padding-right: 10px;
     color: #004445;
     border: 2px solid #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 
@@ -641,9 +643,10 @@
     left: 0;
     height: 300px;
     width: 100%;
-    background: var(--bg-third);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    background: #004445;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-bottom: 50%; */
 }
 
 .post_updated_image {
@@ -659,11 +662,11 @@
 }
 
 .post_updated_picture {
-    width: 420px;
-    height: 420px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--bg-primary);
+    border: 5px solid #004445;
 }
 
 .post_cover_wrap {

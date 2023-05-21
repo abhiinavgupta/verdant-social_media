@@ -21,13 +21,22 @@
 .profile_cover {
     position: relative;
     margin-top: -3px !important;
-    height: 350px;
+    height: 400px;
     width: 100%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     background: #efdca6;
     border: 5px double #004445 ;
     box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+}
+
+.profile_cover img {
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+
 }
 
 .cover {
@@ -42,6 +51,7 @@
     width: 570px !important;
     max-width: 98%;
     /* max-width: 80vw; */
+    box-shadow: 0 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .selectCoverBox_links {
@@ -73,18 +83,20 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    height: 60px;
+    background-color: #004445;
+    /* background: rgba(0, 0, 0, 0.7); */
     padding: 10px 15px;
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 18px;
+    color: #004445;
 }
 
 .save_changes_left {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: #f8b400;
 }
 
 .save_changes_left i {
@@ -103,7 +115,7 @@
 
 .save_changes_right button:first-of-type {
     width: 100px;
-    background: #39393f;
+    /* background: #39393f; */
 }
 
 .save_changes_right button:last-of-type {
@@ -159,7 +171,7 @@
     border-radius: 30px;
     box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     /* box-shadow: 0 12px 20px var(--shadow-1); */
-    z-index: 999;
+    z-index: 99999;
 }
 
 .open_cover_menu_second {
@@ -170,7 +182,7 @@
     padding: 10px;
     width: 300px;
     border-radius: 10px;
-    box-shadow: 0px 12px 20px 0 var(--light-pink-color-blur), 0 2px 4px 0 var(--light-pink-color);
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     z-index: 999;
 }
 
@@ -202,6 +214,7 @@
 
 .profile_w_img {
     position: relative;
+    /* z-index: 999; */
 }
 
 .profile_w_bg {
@@ -507,11 +520,13 @@
 /*---------------------- PROFILE CARD --------------------*/
 
 .profile_card {
-    background: var(--bg-primary);
+    background: #ffda74;
     border-radius: 10px;
-    box-shadow: 0 1px 2px var(--shadow-1);
     padding: 10px 15px;
-    margin-top: 17px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 5px double #004445 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .profile_card_header {
@@ -520,27 +535,24 @@
     justify-content: space-between;
     font-weight: 600;
     font-size: 20px;
+    color: #004445;
 }
 
 .profile_header_link {
     font-weight: normal;
     font-size: 16px;
-    color: var(--pink-color);
+    color: #004445;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-/* .profile_header_link:hover {
-    background: var(--bg-secondary);
-    border-radius: 10px;
-} */
-
 .profile_card_count {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: #f8b400;
+    align-items: left;
+    color: #004445;
+    /* background-color: #004445; */
 }
 
 .profile_card_grid {
@@ -558,15 +570,18 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border-radius: 10px;
+    /* border: 5px double #004445 ; */
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .profile_photo_card:hover {
-    filter: brightness(95%);
+    filter: brightness(50%);
 }
 
 .profile_photo_card img {
     width: 100%;
-    height: 105px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -592,7 +607,7 @@
 .line_seperator {
     width: 2px !important;
     height: 40px !important;
-    border-left: 1px solid var(--pink-color);
+    border-left: 1px solid #2c786c;
 }
 
 .fix {
@@ -698,6 +713,7 @@
         margin: 10px 0;
         text-align: center;
         transform: translateY(-15px);
+        /* color: #ffda74; */
     }
 
     .profile_friend_imgs {

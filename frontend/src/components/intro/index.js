@@ -59,14 +59,14 @@ export default function Intro({ detailss, visitor, setOthername }) {
 
     return (
         <div className="profile_card">
-            <div className="profile_card_header">Intro</div>
+            <div className="profile_card_header">Introduction</div>
 
             {/* BIO */}
             {details?.bio && !showBio && (
                 <div className="info_col">
                     <span className="info_text">{details?.bio}</span>
                     {!visitor &&
-                        <button className="gray_btn hover2" onClick={() => setShowBio(true)}>  {/*style={{ fontWeight: "700", fontSize: "15px" }}*/}
+                        <button className="shadoww_btn hover4" onClick={() => setShowBio(true)}>  {/*style={{ fontWeight: "700", fontSize: "15px" }}*/}
                             Edit Bio
                         </button>
                     }
@@ -79,7 +79,7 @@ export default function Intro({ detailss, visitor, setOthername }) {
                     max={max}
                     setShowBio={setShowBio}
                     updateDetails={updateDetails}
-                    placeholder="Add Bio"
+                    placeholder="ADD SOMETHING ABOUT YOURSELF..."
                     name="bio"
                     norem
                 />
@@ -160,10 +160,10 @@ export default function Intro({ detailss, visitor, setOthername }) {
             )}
 
             {!visitor && !details?.bio && !showBio &&
-                <button onClick={() => setShowBio(true)} className="gray_btn hover2 w100">Add Bio</button>
+                <button onClick={() => setShowBio(true)} className="shadoww_btn hover4 w100">Add Bio</button>
             }
             {!visitor &&
-                <button className="gray_btn hover2 w100" onClick={() => setVisible(true)}>Edit Details</button>
+                <button className="shadoww_btn hover4 w100" onClick={() => setVisible(true)}>Edit Details</button>
             }
             {visible && !visitor &&
                 <EditDetails
@@ -177,10 +177,10 @@ export default function Intro({ detailss, visitor, setOthername }) {
             }
             {/* <div className="flex">
                 {!visitor &&
-                    <button className="gray_btn hover2 w100">Add Hobbies</button>
+                    <button className="shadow_btn hover2 w100">Add Hobbies</button>
                 }
                 {!visitor &&
-                    <button className="gray_btn hover2 w100">Add Featured</button>
+                    <button className="shadow_btn hover2 w100">Add Featured</button>
                 }
             </div> */}
         </div>

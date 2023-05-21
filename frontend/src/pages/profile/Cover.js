@@ -117,8 +117,8 @@ export default function Cover({ cover, visitor, photos }) {
                         <span>Edit your Cover Photo</span>
                     </div>
                     <div className="save_changes_right">
-                        <button className="pink_btn opacity_btn" onClick={() => setCoverPicture("")}>CANCEL</button>
-                        <button className="pink_btn" onClick={() => updateCoverPicture()}>
+                        <button className="shadow_cancel_btn opacity_btn" onClick={() => setCoverPicture("")}>CANCEL</button>
+                        <button className="shadoww_btn" onClick={() => updateCoverPicture()}>
                             {loading
                                 ? <PulseLoader
                                     color="#fff"
@@ -149,7 +149,7 @@ export default function Cover({ cover, visitor, photos }) {
                         image={coverPicture}
                         crop={crop}
                         zoom={zoom}
-                        aspect={width / 350}
+                        aspect={width / 335}
                         onCropChange={setCrop}
                         onCropComplete={onCropComplete}
                         onZoomChange={setZoom}

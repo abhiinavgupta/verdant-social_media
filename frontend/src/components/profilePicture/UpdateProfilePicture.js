@@ -136,19 +136,19 @@ export default function UpdateProfilePicture({ popupRef, image, setImage, setErr
                 </div>
             </div>
             <div className="flex_up">
-                <div className="gray_btn" onClick={() => getCroppedImage("show")}>
+                <div className="shadow_btn" onClick={() => getCroppedImage("show")}>
                     <i className="crop_icon" />Crop Photo
                 </div>
-                <div className="gray_btn">
-                    <i className="temp_icon" />Make Temporary
+                <div className="shadow_btn">
+                    <i className="temp_icon" />Temporary
                 </div>
             </div>
             <div className="flex_p_t">
                 {/* <i className="public_icon"></i>Public */}
             </div>
             <div className="update_submit_wrap">
-                <div className="pink_link" onClick={() => setImage("")}>CANCEL</div>
-                <button className="pink_btn" disabled={loading} onClick={() => updateProfilePicture()}>
+                <div className="shadow_cancel_btn" onClick={() => setImage("")}>CANCEL</div>
+                <button className="shadoww_btn" disabled={loading} onClick={() => updateProfilePicture()}>
                     {loading
                         ? <PulseLoader
                             color="#fff"

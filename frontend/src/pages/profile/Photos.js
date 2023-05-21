@@ -1,4 +1,5 @@
 export default function Photos({ photos }) {
+  
     return (
       <div className="profile_card">
         <div className="profile_card_header">Photos

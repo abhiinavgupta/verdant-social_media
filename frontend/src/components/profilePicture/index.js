@@ -54,10 +54,10 @@ export default function ProfilePicture({ setShow, pRef, photos }) {
                 </div>
                 <div className="update_picture_wrap">
                     <div className="update_picture_btns">
-                        <button className="pink_btn" onClick={() => inputRef.current.click()}>
+                        <button className="shadow_btn" onClick={() => inputRef.current.click()}>
                             <i className="plus_icon filter_white" />Upload Image
                         </button>
-                        {/* <button className="gray_btn">
+                        {/* <button className="shadow_btn">
                             <i className="frame_icon" />Add Frame
                         </button> */}
                     </div>
@@ -65,7 +65,7 @@ export default function ProfilePicture({ setShow, pRef, photos }) {
                 {error &&
                     <div className="postError_forth comment_error">
                         <div className="postError_error">{error}</div>
-                        <button className="pink_btn" onClick={() => { setError("") }}>Retry</button>
+                        <button className="shadow_btn" onClick={() => { setError("") }}>Retry</button>
                     </div>
                 }
                 <div className="old_pictures_wrap scrollbar">

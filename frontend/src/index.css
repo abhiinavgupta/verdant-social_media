@@ -72,6 +72,89 @@ cursor: pointer;
   width: 120px ;
   }
 
+  .shadow_btn {
+    border: none; 
+    outline: none;
+    background:#faf5e4;
+    padding: 8.5px 12px;
+    border-radius: 7px; 
+    font-family: inherit;
+    font-weight: 600; 
+    font-size: medium;
+    color: #2c786c; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    height: 35px;
+    width: 170px ;
+    border: 1px solid #004445 ;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+    }
+    .bio_btn {
+      border: none; 
+      outline: none;
+      background:#2c786c ;
+      padding: 8.5px 12px;
+      border-radius: 7px; 
+      font-family: inherit;
+      font-weight: 600; 
+      font-size: medium;
+      color: #f8b400 ; 
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      height: 35px;
+      width: 170px ;
+      border: 1px solid #004445 ;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      }
+
+    .shadow_cancel_btn {
+      border: none; 
+      outline: none;
+      background:#faf5e4;
+      padding: 8.5px 12px;
+      border-radius: 7px; 
+      font-family: inherit;
+      font-weight: 600; 
+      font-size: medium;
+      color: #2c786c; 
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      height: 35px;
+      width: 110px ;
+      border: 1px solid #004445 ;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      }
+
+    .shadoww_btn {
+      border: none; 
+      outline: none;
+      background: #f8b400;
+      padding: 8.5px 12px;
+      border-radius: 7px; 
+      font-family: inherit;
+      font-weight: 600; 
+      font-size: medium;
+      color: #2c786c; 
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      height: 35px;
+      width: 170px ;
+      border: 1px solid #004445 ;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      }
+
   .story_btn {
     border: none; 
     outline: none;
@@ -90,6 +173,7 @@ cursor: pointer;
     height: 45px;
     width: 140px ;
     border: 3px double #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     }
 
 .blur{
@@ -98,8 +182,7 @@ cursor: pointer;
    bottom: 0;
    left: 0;
    right: 0;
-   background: rgba(255, 255, 255, 0.768);
-   z-index: 99;
+   background: rgba(255, 255, 255, 0.703);
 }
 .yellow_btn {
   border: 1px solid #004445; 
@@ -237,8 +320,8 @@ cursor: pointer;
 }
 .small_circle{
   position: relative;
-  height: 36px;
-  width: 36px;
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -246,5 +329,8 @@ cursor: pointer;
   margin-right: 11px;
   background: #faf5e4;
   cursor: pointer;
+  /* border: 2px solid #004445 ; */
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
+
 

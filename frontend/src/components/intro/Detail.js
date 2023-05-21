@@ -9,7 +9,7 @@ export default function Detail({ header, value, img, placeholder, name, handleCh
         <div>
             <div className="add_details_flex" onClick={() => setShow(prev => !prev)}>
                 {value ? (
-                    <div className="info_profile">
+                    <div className="info_profile no_underline">
                         <img src={`../../../icons/${img}.png`} alt="" />
                         <span className="value">{value}</span>
                         <i className="edit_icon"></i>
