@@ -183,6 +183,7 @@ cursor: pointer;
    left: 0;
    right: 0;
    background: rgba(255, 255, 255, 0.703);
+   z-index: 9999;
 }
 .yellow_btn {
   border: 1px solid #004445; 

@@ -37,7 +37,7 @@ export const reactPost = async (postId, react, token) => {
 // GET POSTS REACTS
 export const getReacts = async (postId, token) => {
     try {
-        const { data } = await axios.get(`${process.env.REACT_APP_LOGIN_URL}/getReacts/${postId}`, {
+        const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/getReacts/${postId}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             }
@@ -52,7 +52,7 @@ export const getReacts = async (postId, token) => {
 // COMMENT
 export const comment = async (postId, comment, image, token) => {
     try {
-        const { data } = await axios.put(`${process.env.REACT_APP_LOGIN_URL}/comment`, {
+        const { data } = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/comment`, {
             postId, comment, image
         }, {
             headers: {

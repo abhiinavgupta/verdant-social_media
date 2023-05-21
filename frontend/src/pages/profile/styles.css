@@ -3,7 +3,7 @@
 }
 
 .profile {
-    color: var(--color-primary);
+    color: #fff;
     min-height: calc(100vh - 70px);
 }
 
@@ -649,6 +649,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 
 @media (max-width: 900px) {
@@ -688,7 +689,7 @@
     }
 
     .profile_grid .createPost {
-        width: 100%;
+        width: 100% !important;
     }
 
     /* .profile_grid {
@@ -784,7 +785,7 @@
 }
 
 .showMore .profile_left {
-    top: 71px;
+    top: 61px;
     /* bottom: 30px; */
 }
 
