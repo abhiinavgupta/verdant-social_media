@@ -113,7 +113,7 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
   const check = useMediaQuery({
     query: "(min-width: 901px)"
   });
-
+ 
   return (
     <div className="profile">
       {/* {postVisible &&

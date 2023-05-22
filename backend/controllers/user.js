@@ -348,12 +348,12 @@ exports.addFriend = async (req, res) => {
         await receiver.updateOne({
           $push: { requests: sender._id },
         });
-        // await receiver.updateOne({
-        //   $push: { followers: sender._id },
-        // });
-        // await sender.updateOne({
-        //   $push: { following: receiver._id },
-        // });
+        await receiver.updateOne({
+          $push: { followers: sender._id },
+        });
+        await sender.updateOne({
+          $push: { following: receiver._id },
+        });
         res.json({ message: "Friend request has been sent." });
       }
       else {
@@ -379,12 +379,12 @@ exports.cancelRequest = async (req, res) => {
         await receiver.updateOne({
           $pull: { requests: sender._id },
         });
-        // await receiver.updateOne({
-        //   $pull: { followers: sender._id },
-        // });
-        // await sender.updateOne({
-        //   $pull: { following: receiver._id },
-        // });
+        await receiver.updateOne({
+          $pull: { followers: sender._id },
+        });
+        await sender.updateOne({
+          $pull: { following: receiver._id },
+        });
         res.json({ message: "You successfully canceled request" });
       } else {
         return res.status(400).json({ message: "Already Canceled" });

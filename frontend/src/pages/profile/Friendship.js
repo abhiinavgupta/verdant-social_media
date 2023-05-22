@@ -77,7 +77,9 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                 </button>
             ) : (
                 <button className="story_btn" onClick={() => followHandler()}>
-                    <img src="../../../icons/follow.png" className="invert" alt="" />
+                    <img src="../../../icons/follow.png" 
+                    // className="invert" 
+                    alt="" />
                     <span>Follow</span>
                 </button>
             )}
@@ -99,17 +101,17 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                                 Edit Friend list
                             </div> */}
                                 {friendship?.following ? (
-                                    <div className="open_cover_menu_item hover3" onClick={() => unfollowHandler()}>
+                                    <div className="open_cover_menu_item hover4" onClick={() => unfollowHandler()}>
                                         <img src="../../../icons/unfollowOutlined.png" alt="" />
                                         Unfollow
                                     </div>
                                 ) : (
-                                    <div className="open_cover_menu_item hover3" onClick={() => followHandler()}>
+                                    <div className="open_cover_menu_item hover4" onClick={() => followHandler()}>
                                         <img src="../../../icons/following.png" style={{ scale: "1.1", marginRight: "3px" }} alt="" />
                                         Follow
                                     </div>
                                 )}
-                                <div className="open_cover_menu_item hover3" onClick={() => unfriendHandler()}>
+                                <div className="open_cover_menu_item hover4" onClick={() => unfriendHandler()}>
                                     <i className="unfriend_outlined_icon"></i>
                                     Unfriend
                                 </div>
@@ -130,7 +132,7 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                 ) : (
                     friendship?.requestReceived && (
                         <div className="friends_menu_wrap">
-                            <button className="gray_btn" onClick={() => setRespondMenu(true)}>
+                            <button className="story_btn" onClick={() => setRespondMenu(true)}>
                                 {/* <img src="../../../icons/friends.png" alt="" /> */}
                                 <img src="../../../icons/editFriends.png" alt="" />
                                 <span>Action</span>
@@ -152,7 +154,8 @@ export default function Friendship({ friendship, setFriendship, profileid, follo
                 )
                 }
                 <button className={friendship?.friends ? "story_btn" : "story_btn"}>
-                    <img src="../../../icons/message.png" className={friendship?.friends ? "invert" : ""} alt="" />
+                    <img src="../../../icons/message.png" className={friendship?.friends ? "" : ""} alt="" />  
+                    {/* //invert  */}
                     <span>Message</span>
                 </button>
             </div>

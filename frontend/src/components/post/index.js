@@ -31,6 +31,8 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
         };
         getPostReacts(post?.comments);
     }, [post, user.token]);
+
+    
     useEffect(() => {
         setComments(post?.comments)
     }, [post]);

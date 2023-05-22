@@ -45,10 +45,11 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #f8b400;
+    /* border-radius: 2px solid #004445; */
 }
 .headerr_logo{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     object-fit: cover;
 }
 .search {
