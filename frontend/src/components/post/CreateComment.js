@@ -127,6 +127,7 @@ export default function CreateComment({ user, postId, setComments, setCount }) {
                         <div className="comment_emoji_picker">
                             <Picker onEmojiClick={handleEmoji} />
                         </div>
+                        
                     }
                     <input
                         type="file"
@@ -156,7 +157,7 @@ export default function CreateComment({ user, postId, setComments, setCount }) {
                         : <div className="comment_circle" style={{ marginTop: "5px" }}>
                             <ClipLoader
                                 size={20}
-                                color="#F51997"
+                                color="#2c786c"
                             />
                         </div>}
                     <div className="comment_circle_icon hover4" onClick={() => { setPicker(prev => !prev) }}>

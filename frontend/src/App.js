@@ -66,17 +66,17 @@ function App() {
         // setShowPreview={setShowPreview} 
         user={user} 
         setPostVisible={setPostVisible} 
-        // posts={posts} 
-        // dispatch={dispatch} 
+        posts={posts} 
+        dispatch={dispatch} 
         />
       }
 <Routes>
 
 <Route element={<LoggedInRoute />}>
-<Route path="/profile" element={ <Profile  setPostVisible={setPostVisible} />} exact />
-<Route path="/profile/:username" element={ <Profile setPostVisible={setPostVisible} />} exact />
-<Route path="/" element={ <Home setPostVisible={setPostVisible} 
-posts={posts}
+<Route path="/profile" element={ <Profile  setPostVisible={setPostVisible} getAllPosts={getAllPosts} />} exact />
+<Route path="/profile/:username" element={ <Profile setPostVisible={setPostVisible} getAllPosts={getAllPosts} />} exact />
+<Route path="/" element={ <Home setPostVisible={setPostVisible} getAllPosts={getAllPosts} 
+posts={posts} loading={loading}
  />} exact />
 <Route path="/activate/:token" element={<Activate />} exact />
 </Route>

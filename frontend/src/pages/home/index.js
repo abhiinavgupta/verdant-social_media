@@ -10,21 +10,21 @@ import Post from "../../components/post";
 import { HashLoader } from "react-spinners";
 import { useEffect, useRef, useState } from "react";
 
-export default function Home({ loading, posts, error, setPostVisible, setRoomOpen, setShowPreview, setType, setFullscreen, setSlideNumber, setPostImages, setCoverType }) {
+export default function Home({ loading, posts, error, setPostVisible, setRoomOpen, setShowPreview, setType, setFullscreen, setSlideNumber, setPostImages, setCoverType, getAllPosts }) {
   const { user } = useSelector((state) => ({ ...state }));
 
 //     const middle = useRef(null);
-//     const[ight,setHeight] = useState();
+//     const[height,setHeight] = useState();
 //     useEffect(()=>{
-// setHeight(middle.c)
-//     },[]);
+// setHeight(middle.current.clientHeight);
+//     },[loading,height]);
 
 
 
   return (
     <div className="home">
       {/* <div className="home" style={{ height: `${height}px` }}> */}
-      <Header page="home" />
+      <Header page="home" getAllPosts={getAllPosts} />
       <LeftHome user={user} />
       <div className="home_middle">
         <Stories />

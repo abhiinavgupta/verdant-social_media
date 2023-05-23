@@ -100,6 +100,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #004445;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .header_col {
@@ -686,7 +687,7 @@
     display: flex;
     gap: 5px;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 9px;
 }
 
 .comment_img {
@@ -694,20 +695,23 @@
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .comment_image {
-    margin-top: 5px;
+    margin-top: 15px;
     width: 200px;
     height: 150px;
     border-radius: 5px;
     object-fit: cover;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .comment_wrap {
-    background: var(--bg-forth);
+    background: #f8b400;
     padding: 5px 15px;
     border-radius: 50px;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
 .comment_name {
@@ -720,8 +724,9 @@
     gap: 10px;
     font-size: 12px;
     font-weight: 600;
-    color: var(--color-secondary);
+    color: #004445;
     margin-left: 10px;
+    margin-top: 8px;
 }
 
 .myView {
@@ -734,16 +739,18 @@
 .view_comments {
     /* margin-top: 10px; */
     font-size: 14px;
-    font-weight: 600;
-    color: var(--color-secondary);
+    font-weight: 700;
+    color: #004445 ;
 }
+  
 
 .view_comments span {
     cursor: pointer;
 }
 
 .view_comments span:hover {
-    color: var(--pink-color-btn);
+    color: #2c786c;
+    text-decoration: underline;
 }
 
 .view_comments_second {

@@ -305,7 +305,7 @@ export default function Post({ post, user, profile, setSlideNumber, setFullscree
                                 setCount(0);
                                 setAllow(false);
                             }}>
-                                <span>Close</span>
+                                <span>Hide</span>
                             </div>
                         )}
                         {allow && count < comments.length && (

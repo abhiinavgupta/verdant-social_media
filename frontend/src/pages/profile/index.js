@@ -22,10 +22,12 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { HashLoader } from "react-spinners";
 import ProfileMenu from "./ProfileMenu";
+import CreatePostPopup from "../../components/createPostPopup";
 
 
-export default function Profile({ setSlideNumber, setFullscreen, setPostImages , setPostVisible}) {
+export default function Profile({ setSlideNumber, setFullscreen, setPostImages , setPostVisible, getAllPosts}) {
   // export default function Profile({ getAllPosts }) {
+    const [visible,  setVisible] = useState(false);
   const navigate = useNavigate();
   const { username } = useParams();
   const { user } = useSelector((state) => ({ ...state }));
@@ -116,7 +118,7 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
  
   return (
     <div className="profile">
-      {/* {postVisible &&
+      {visible &&
         <CreatePostPopup
           user={user}
           setPostVisible={setPostVisible}
@@ -124,8 +126,8 @@ export default function Profile({ setSlideNumber, setFullscreen, setPostImages ,
           dispatch={dispatch}
           profile
         />
-      } */}
-      <Header page="profile" visitor={visitor} />
+      }
+      <Header page="profile" visitor={visitor} getAllPosts={getAllPosts} />
       {/* <Header page="profile" visitor={visitor} getAllPosts={getAllPosts} /> */}
 
       {/* SKELETON GRADIENT LOADING */}
