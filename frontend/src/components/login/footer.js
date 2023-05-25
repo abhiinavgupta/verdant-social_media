@@ -60,7 +60,7 @@ AdChoices
 </Link>
 <Link to="/">  Careers</Link>
 
-<Link to="../../pages/data/Privacy">  Privacy</Link> <Link to="/">  Cookies</Link>
+<Link to="/privacy">  Privacy</Link> <Link to="/">  Cookies</Link>
 
     </div>
 <div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023</div>
