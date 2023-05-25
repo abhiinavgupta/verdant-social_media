@@ -54,9 +54,9 @@ export default function Header({ page, getAllPosts }) {
                 </div>
     </div>
     {/* </div> */}
-    { showSearchMenu && <SearchMenu 
+    { showSearchMenu && (<SearchMenu 
     color={color}
-     setShowSearchMenu={setShowSearchMenu} /> }
+     setShowSearchMenu={setShowSearchMenu} token={user.token} />) }
     
     <div className="header_middle">
         <Link to="/" className={`middle_icon hover1 ${ page ==="home" ? "active" : "hover1"}`} onClick={()=> getAllPosts()}>
@@ -66,9 +66,11 @@ export default function Header({ page, getAllPosts }) {
            
            
         </Link>
-        <Link to="/" className="middle_icon hover1">
-            <Friends color={color} />
+        <Link to="/friends" className={`middle_icon hover1 ${ page ==="friends" ? "active" : "hover1"}`}>
+            {/* <Friends color={color} /> */}
+            {page === "friends" ? <FriendsActive /> : <Friends color={"#f8b400"} />}
         </Link> 
+        
         <Link to="/" className="middle_icon hover1">
         <div className="middle_notification">9+</div>
             <Watch color={color} />

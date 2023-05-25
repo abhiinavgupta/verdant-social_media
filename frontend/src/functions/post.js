@@ -30,6 +30,7 @@ export const reactPost = async (postId, react, token) => {
         return "ok";
     }
     catch (error) {
+
         return error.response.data.message;
     }
 };

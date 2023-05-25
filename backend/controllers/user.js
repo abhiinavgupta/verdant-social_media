@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 const { generateToken } = require("../helpers/tokens");
 const generateCode = require("../helpers/generateCode");
 const { sendVerificationEmail, sendResetCode } = require("../helpers/mailer");
+const mongoose = require("mongoose");
 
 exports.register = async (req, res) => {
     try {
@@ -657,7 +658,7 @@ exports.getFriendsPageInfos = async (req, res) => {
       .populate("friends", "first_name last_name picture username")
       .populate("requests", "first_name last_name picture username");
     const sentRequests = await User.find({
-      requests: mongoose.Types.ObjectId(req.user.id),
+      requests: new mongoose.Types.ObjectId(req.user_id),
     }).select("first_name last_name picture username");
     res.json({
       friends: user.friends,
@@ -667,5 +668,6 @@ exports.getFriendsPageInfos = async (req, res) => {
   }
   catch (error) {
     res.status(500).json({ message: error.message });
+
   }
 }
