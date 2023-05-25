@@ -595,7 +595,7 @@ header {
 input.themeInput[type='radio']:after {
     width: 15px;
     height: 15px;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     position: relative;
     background-color: #d1d3d1;
     content: '';
@@ -607,9 +607,9 @@ input.themeInput[type='radio']:after {
 input.themeInput[type='radio']:checked:after {
     width: 15px;
     height: 15px;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     position: relative;
-    background-color: var(--pink-color);
+    background-color: #f8b400;
     content: '';
     display: inline-block;
     visibility: visible;

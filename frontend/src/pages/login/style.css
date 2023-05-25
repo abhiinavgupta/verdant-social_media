@@ -248,18 +248,18 @@
     text-decoration: underline;
 }
 .footer_square{
-    background: var(--bg-secondary);
+    background: #004445;
     height: 19px;
     width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--bg-third);
+    border: 1px solid #f8b400;
 }
 
 .footer_square i {
     transform: scale(0.8);
-    -webkit-filter: invert(40%);
+    -webkit-filter: invert(100%);
    
 }
 

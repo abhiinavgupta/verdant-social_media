@@ -75,7 +75,7 @@ AdChoices
             </div>
 <div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023</div>
         </footer> */}
-        <Footer />
+        <Footer setVisible={setVisible}/>
     </div>
 
     </div>

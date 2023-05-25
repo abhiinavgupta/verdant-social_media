@@ -59,7 +59,8 @@ function App() {
   };
 
 // console.log(posts);
-  return <div>
+return <div className={darkTheme ? "dark" : ""}>
+   {/* return <div className="dark">  */}
   {postVisible &&
         <CreatePostPopup 
         // type={type} 

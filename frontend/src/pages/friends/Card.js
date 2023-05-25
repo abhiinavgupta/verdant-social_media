@@ -7,17 +7,24 @@ export default function Card({ userr, type, getData }) {
 
     const cancelRequestHandler = async (userId) => {
         const res = await cancelRequest(userId, user.token);
-        if (res === "ok") getData();
+        if (res === "ok") {
+            getData();
+        }
     };
     const confirmHandler = async (userId) => {
         const res = await acceptRequest(userId, user.token);
-        if (res === "ok") getData();
+        if (res === "ok") {
+            getData();
+        }
     };
     const deleteHandler = async (userId) => {
         const res = await deleteRequest(userId, user.token);
-        if (res === "ok") getData();
+        if (res === "ok") {
+            getData();
+        }
     };
 
+    
     return (
         <div className="req_card">
             <Link to={`/profile/${userr.username}`}>
@@ -33,7 +40,7 @@ export default function Card({ userr, type, getData }) {
                         <button className="shadoww_btn" onClick={() => deleteHandler(userr._id)}>Reject</button>
                     </div>
                     : type === "sent"
-                        ? <button className="pink_btn" onClick={() => cancelRequestHandler(userr._id)}>Cancel Request</button>
+                        ? <button className="shadoww_btn" onClick={() => cancelRequestHandler(userr._id)}>Cancel Request</button>
                         : ""
             }
         </div>

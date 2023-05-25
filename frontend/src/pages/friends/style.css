@@ -53,6 +53,7 @@
 }
 .friends_left .menu_item {
     cursor: pointer;
+    /* margin-top: 20px; */
 
 }
 
@@ -91,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--pink-color);
+    color: #004445;
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;

@@ -1,12 +1,11 @@
+import { combineReducers } from "redux";
+import { themeReducer } from "./themeReducer";
 import { userReducer } from "./userReducer";
-
-const { useReducer } = require("react");
-const { combineReducers } = require("redux");
-
 
 
 
 const rootReducer = combineReducers({
         user: userReducer,
+        darkTheme: themeReducer,
 });
 export default rootReducer

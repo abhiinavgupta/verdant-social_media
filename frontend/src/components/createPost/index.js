@@ -1,7 +1,7 @@
 import { Feeling, LiveVideo, Photo } from "../../svg"
 import "./style.css"
 
-export default function CreatePost({user , setPostVisible , profile}) {
+export default function CreatePost({user , setPostVisible , profile, setRoomOpen, setType, setShowPreview}) {
   return (
     <div className="createPost">
         <div className="createPost_header">
@@ -14,7 +14,7 @@ export default function CreatePost({user , setPostVisible , profile}) {
         </div>
         <div className="create_splitter"></div>
         <div className="createPost_body">
-        <div className="createPost_icon hover4">
+        <div className="createPost_icon hover4" onClick={() => { setRoomOpen(true) }}>
         <LiveVideo color="#f3425f" />  Video Chat
         </div>
         <div className="createPost_icon hover4">
@@ -28,10 +28,13 @@ export default function CreatePost({user , setPostVisible , profile}) {
         Feeling/Activity
         </div>
           ) : (
-            <div className="createPost_icon hover4">
+            <div className="createPost_icon hover4" onClick={() => {
+                    setType(`How r u feeling today, ${user?.first_name}`);
+                    setShowPreview(false)
+                    setPostVisible(true)}}>
         <Feeling color="#f7b928" />  
         
-        Life Event
+        Thoughts
         </div>
           )
         }

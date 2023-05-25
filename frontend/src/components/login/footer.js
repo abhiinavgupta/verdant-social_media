@@ -2,19 +2,21 @@
 
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer(setVisible) {
   return (
     <footer className="login_footer">
     <div className="login_footer_wrap">
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
-        <Link to="/" > english </Link>
+        <Link to="/" > English (UK) </Link>
+        <Link to="/" > हिन्दी  </Link>
+        <Link to="/" > ردو </Link>
+        <Link to="/" > ਪੰਜਾਬੀ </Link>
+        <Link to="/" > বাংলা </Link>
+        <Link to="/" > ગુજરાતી </Link>
+        <Link to="/" > मराठी </Link>
+        <Link to="/" > தமிழ் </Link>
+        <Link to="/" > తెలుగు </Link>
+        <Link to="/" > മലയാളം </Link>
+        <Link to="/" > ಕನ್ನಡ </Link>
         <Link to="/" className="footer_square" >
             <i className="plus_icon"></i>
         </Link>
@@ -22,7 +24,7 @@ export default function Footer() {
     </div>
     <div className="footer_splitter"></div>
     <div className="login_footer_wrap">
-    <Link to="/">Sign Up</Link>
+    <Link to="/" onClick={() => setVisible(true)} >Sign Up</Link>
 
 <Link to="/">Log in</Link>
 <Link to="/">Watch </Link>
@@ -58,7 +60,7 @@ AdChoices
 </Link>
 <Link to="/">  Careers</Link>
 
-<Link to="/">  Privacy</Link> <Link to="/">  Cookies</Link>
+<Link to="../../pages/data/Privacy">  Privacy</Link> <Link to="/">  Cookies</Link>
 
     </div>
 <div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023</div>
