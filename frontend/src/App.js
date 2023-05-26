@@ -14,6 +14,9 @@ import { useEffect, useReducer, useState } from "react";
 import { postsReducer } from "./functions/reducers";
 import axios from "axios";
 import Friends from "./pages/friends";
+import Privacy from "../src/pages/data/Privacy";
+import Cookies from "../src/pages/data/Cookies";
+import Terms from "./pages/data/Terms";
 
 
 
@@ -88,7 +91,13 @@ posts={posts} loading={loading}
 <Route path="/login" element={ <Login />} exact />
 </Route>
 <Route path="/reset" element={<Reset />} />
+<Route path="/privacy" element={<Privacy />} />
+<Route path="/cookies" element={<Cookies />} />
+<Route path="/terms" element={<Terms />} />
 </Routes>
+
+
+
 
 
   </div>

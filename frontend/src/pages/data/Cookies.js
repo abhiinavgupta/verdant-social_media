@@ -9,7 +9,7 @@ export default function Cookies() {
                 <div className="post">
                     <h1>Cookie Policy</h1>
 
-                    <p>This is the Cookie Policy for Clang Social</p>
+                    <p>This is the Cookie Policy for Verdant</p>
 
                     <p><strong>What Are Cookies</strong></p>
 

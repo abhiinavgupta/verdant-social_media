@@ -52,7 +52,7 @@ export default function LoginForm({setVisible}) {
     
     <div className="login_wrap">
         <div className="login_1">
-            <img src="verdant-name-logo.png" alt="VERDANT" />
+            <img src="verdant-name-logo.png" className="l_r_i"alt="VERDANT" />
             <span>
                 VERDANT helps you connect and share with people who loves mother nature.
             </span>

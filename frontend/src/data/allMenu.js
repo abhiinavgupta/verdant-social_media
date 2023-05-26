@@ -2,7 +2,7 @@ export const menu = [
     {
       name: "Campus",
       icon: "campus",
-      description: "A digital environment for University students on Clang Social",
+      description: "A digital environment for University students on Verdant",
     },
     {
       name: "Events",
@@ -18,7 +18,7 @@ export const menu = [
     {
       name: "Groups",
       icon: "groups",
-      description: "Join and connect with amazing communities out there on Clang Social.",
+      description: "Join and connect with amazing communities out there on Verdant .",
     },
     {
       name: "News Feed",
@@ -28,7 +28,7 @@ export const menu = [
     {
       name: "Pages",
       icon: "pages",
-      description: "Discover and connect with businesses on Clang Social.",
+      description: "Discover and connect with businesses on Verdant .",
     },
     {
       name: "Gaming Video",
@@ -59,12 +59,12 @@ export const menu = [
     {
       name: "Recent Ad Activity",
       icon: "recent",
-      description: "See all the ads you interacted with on Clang Social.",
+      description: "See all the ads you interacted with on Verdant.",
     },
     {
       name: "Memories",
       icon: "memories",
-      description: "Browse your old photos, videos and posts on Clang Social.",
+      description: "Browse your old photos, videos and posts on Verdant .",
     },
     {
       name: "Saved",

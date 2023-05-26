@@ -343,4 +343,6 @@ cursor: pointer;
     box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
 }
 
-
+.l_r_i{
+  width: 100%;
+}

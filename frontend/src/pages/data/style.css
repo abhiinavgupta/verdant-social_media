@@ -1,12 +1,14 @@
 .space {
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
 }
 
 .post {
-    padding: 10px !important;
+    padding: 30px !important;
 }
 
 .post h1 {
     font-size: 30px;
-    color: var(--pink-color);
+    color: #004445;
 }
+

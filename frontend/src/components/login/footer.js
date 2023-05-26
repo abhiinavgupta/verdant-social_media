@@ -36,7 +36,7 @@ export default function Footer(setVisible) {
 
 <Link to="/">  Instagram</Link>
 
-<Link to="/">  Bulletin</Link>
+{/* <Link to="/">  Bulletin</Link>
 
 <Link to="/">  Local</Link>
 
@@ -53,14 +53,14 @@ export default function Footer(setVisible) {
 
 <Link to="/">  Create Page</Link>
 
-<Link to="/">  Developers </Link>
+<Link to="/">  Developers </Link> */}
 <Link to="/">
 AdChoices
 <i className="adChoices_icon"></i>
 </Link>
-<Link to="/">  Careers</Link>
+<Link to="/terms">  Terms</Link>
 
-<Link to="/privacy">  Privacy</Link> <Link to="/">  Cookies</Link>
+<Link to="/privacy">  Privacy</Link> <Link to="/cookies">  Cookies</Link>
 
     </div>
 <div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023</div>
