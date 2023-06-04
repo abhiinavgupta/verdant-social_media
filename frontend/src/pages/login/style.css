@@ -236,6 +236,20 @@
     max-width: 350px;
     margin: 0 auto;
 }
+
+.login_footer_wrapp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px 10px;
+    font-size: 13px;
+    color: #f8b400 ;
+    max-width: 3000px;
+    margin: 0 auto;
+
+}
+
 .login_footer_wrap a {
     display: flex;
     align-items: center;

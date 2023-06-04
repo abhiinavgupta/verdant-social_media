@@ -63,7 +63,12 @@ AdChoices
 <Link to="/privacy">  Privacy</Link> <Link to="/cookies">  Cookies</Link>
 
     </div>
-<div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023</div>
+<div className="login_footer_wrap" style={{fontSize:"12px", marginTop:"10px"}}> Abhinav Gupta Ⓒ 2023
+
+</div>
+<div className="login_footer_wrapp"  style={{fontSize:"12px", marginTop:"10px"}}>
+NOTE : IF YOU ARE UNABLE TO RECEIVE CONFIRMATION EMAIL , KINDLY CONTACT OWNER ,AS TOKEN NEEDS  TO BE REFRESHED EVERY TWO DAYS.
+</div>
 </footer>
   )
 };

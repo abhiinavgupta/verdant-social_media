@@ -90,6 +90,7 @@ export default function LoginForm({setVisible}) {
                 <span><b>Create a page </b>
                 for a Celebrity, Brand or business.</span>
             </Link>
+            
         </div>
     </div>
   )
